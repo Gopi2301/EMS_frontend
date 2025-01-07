@@ -10,30 +10,15 @@ function App() {
 
   return (
     <main >
-    <Navbar/>
     <Routes>
+      <Route path='/' element={<Home />}/>
       <Route path='/analysis' element={<Analysis />}/>
       <Route path='/dashboard' element={<Dashboard />}/>
-      <Route path='/home' element={<Home />}/>
+      <Route path='/signin' element={<Signin />}/>
     </Routes>
     {/* add left sidebar and right side dynamic main content */}
-    <div className="container">
-      <div className="left-sidebar">
-        <ul>
-          <li>My Projects</li>
-          <li>My Tasks</li>
-          <li>Calendar</li>
-        </ul>
-      </div>
       <div className="main-content">
-        <Routes>
-          <Route path='/analysis' element={<Analysis />} />
-          <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/home' element={<Home />} />
-          <Route path='/signin' element={<Signin />} />
-        </Routes>
       </div>
-    </div>
     </main>
   )
 }
