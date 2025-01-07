@@ -5,6 +5,7 @@ import Analysis from './components/pages/Analysis'
 import Dashboard from './components/pages/Dashboard'
 import Home from './components/pages/Home'
 import Signin from './components/pages/Signin'
+import Signup from './components/pages/Signup'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Route path='/analysis' element={<Analysis />}/>
       <Route path='/dashboard' element={<Dashboard />}/>
       <Route path='/signin' element={<Signin />}/>
+      <Route path ='/signup' element={<Signup />}/>
     </Routes>
     {/* add left sidebar and right side dynamic main content */}
       <div className="main-content">
